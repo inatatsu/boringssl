@@ -463,6 +463,8 @@ elseif(${CMAKE_SYSTEM_PROCESSOR} STREQUAL "arm64")
 # Apple A12 Bionic chipset which is added in iPhone XS/XS Max/XR uses arm64e architecture.
 elseif(${CMAKE_SYSTEM_PROCESSOR} STREQUAL "arm64e")
   set(ARCH "aarch64")
+elseif (${CMAKE_SYSTEM_PROCESSOR} STREQUAL "s390x")
+  set(ARCH "s390x")
 elseif(${CMAKE_SYSTEM_PROCESSOR} MATCHES "^arm*")
   set(ARCH "arm")
 elseif(${CMAKE_SYSTEM_PROCESSOR} STREQUAL "mips")
